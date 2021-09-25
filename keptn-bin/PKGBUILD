@@ -10,10 +10,6 @@ provides=('keptn')
 source=(
 	"keptn-${pkgver}.tar.gz::https://github.com/keptn/keptn/releases/download/${pkgver}/keptn-${pkgver}-linux-amd64.tar.gz"
 )
-noextract=(
-	"keptn-${pkgver}"
-	"keptnd-${pkgver}"
-)
 sha256sums=('e064e43c365109bb223f10da6ac554975283eda31437e75b8765ef3e43390a3d')
 
 package() {
