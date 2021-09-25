@@ -1,0 +1,21 @@
+# Maintainer: Rafed Ramzi <rafedramzi@gmail.com>
+pkgname=keptn-bin
+pkgver=0.9.2
+pkgrel=1
+pkgdesc="Cloud-native application life-cycle orchestration. Keptn automates your SLO-driven multi-stage delivery and operations & remediation of your applications"
+arch=('x86_64')
+url="https://github.com/keptn/keptn"
+license=('apache')
+provides=('keptn')
+source=(
+	"keptn-${pkgver}.tar.gz::https://github.com/keptn/keptn/releases/download/${pkgver}/keptn-${pkgver}-linux-amd64.tar.gz"
+)
+noextract=(
+	"keptn-${pkgver}"
+	"keptnd-${pkgver}"
+)
+sha256sums=('e064e43c365109bb223f10da6ac554975283eda31437e75b8765ef3e43390a3d')
+
+package() {
+	install -D -m755 "keptn-${pkgver}-linux-amd64" "${pkgdir}/usr/bin/keptn"
+}
