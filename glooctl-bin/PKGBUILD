@@ -1,0 +1,18 @@
+# Maintainer: Rafed Ramzi <rafedramzi@gmail.com>
+pkgname=glooctl-bin
+pkgver=1.7.22
+pkgrel=1
+pkgdesc="The Feature-rich, Kubernetes-native, Next-Generation API Gateway Built on Envoy"
+arch=('x86_64')
+url="https://github.com/solo-io/gloo"
+license=('apache')
+provides=('glooctl')
+source=(
+	"glooctl::https://github.com/solo-io/gloo/releases/download/v1.7.22/glooctl-linux-amd64"
+)
+
+sha256sums=('0c8372b846cf4be40c25da119f625ed0980d715f923b0b73473c516afef5dffe')
+
+package() {
+	install -D -m755 "glooctl" "${pkgdir}/usr/bin/glooctl"
+}
