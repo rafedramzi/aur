@@ -8,7 +8,7 @@ url="https://github.com/solo-io/gloo"
 license=('apache')
 provides=('glooctl')
 source=(
-	"glooctl::https://github.com/solo-io/gloo/releases/download/v1.7.22/glooctl-linux-amd64"
+	"glooctl::https://github.com/solo-io/gloo/releases/download/v${pkgver}/glooctl-linux-amd64"
 )
 
 sha256sums=('0c8372b846cf4be40c25da119f625ed0980d715f923b0b73473c516afef5dffe')
