@@ -1,13 +1,13 @@
 pkgbase = inspektor-gadget-bin
 	pkgdesc = Collection of gadgets for debugging and introspecting Kubernetes applications using BPF
-	pkgver = 0.3.0
+	pkgver = 0.3.1
 	pkgrel = 1
 	url = https://github.com/inspektor-gadget/inspektor-gadget
 	arch = x86_64
 	license = apache,
 	license = GPL2
 	provides = kubectl-gadget
-	source = inspektor-gadget-0.3.0.tar.gz::https://github.com/kinvolk/inspektor-gadget/releases/download/v0.3.0/inspektor-gadget-linux-amd64.tar.gz
-	sha256sums = d8c9e9a556dec76b54f9788530db61a42d9ed8f4a849a178d6245b438c30e16b
+	source = inspektor-gadget-0.3.1.tar.gz::https://github.com/kinvolk/inspektor-gadget/releases/download/v0.3.1/inspektor-gadget-linux-amd64.tar.gz
+	sha256sums = 3f7eca79b16270ee0f5817dddacf260bc65763aa540451676d336dfab89313a6
 
 pkgname = inspektor-gadget-bin
