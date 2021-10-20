@@ -1,0 +1,18 @@
+# Maintainer: Rafed Ramzi <rafedramzi@gmail.com>
+pkgname=sonobuoy-bin
+pkgver=0.54.0
+pkgrel=1
+pkgdesc="CLI tool and library for generating a Software Bill of Materials from container images and filesystems"
+arch=('x86_64')
+url="https://github.com/vmware-tanzu/sonobuoy"
+license=('apache')
+provides=('sonobuoy')
+source=(
+	"sonobuoy.tar.gz::https://github.com/vmware-tanzu/sonobuoy/releases/download/v${pkgver}/sonobuoy_${pkgver}_linux_amd64.tar.gz"
+)
+
+sha256sums=('cec46f561a7eab9c84f62a24b75397e292822f09ab0342fad308585a007bc4a1')
+
+package() {
+	install -D -m755 "sonobuoy" "${pkgdir}/usr/bin/sonobuoy"
+}
