@@ -1,0 +1,12 @@
+pkgbase = syft-bin
+	pkgdesc = CLI tool and library for generating a Software Bill of Materials from container images and filesystems
+	pkgver = 0.25.0
+	pkgrel = 1
+	url = https://github.com/anchore/syft
+	arch = x86_64
+	license = apache
+	provides = syft
+	source = syft.tar.gz::https://github.com/anchore/syft/releases/download/v0.25.0/syft_0.25.0_linux_amd64.tar.gz
+	sha256sums = 23894d0911f103698cf8f5293e6ddfc02f6e59fbbc5e2c32aea9c78c0957018f
+
+pkgname = syft-bin

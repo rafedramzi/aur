@@ -1,0 +1,18 @@
+# Maintainer: Rafed Ramzi <rafedramzi@gmail.com>
+pkgname=syft-bin
+pkgver=0.25.0
+pkgrel=1
+pkgdesc="CLI tool and library for generating a Software Bill of Materials from container images and filesystems"
+arch=('x86_64')
+url="https://github.com/anchore/syft"
+license=('apache')
+provides=('syft')
+source=(
+	"syft.tar.gz::https://github.com/anchore/syft/releases/download/v${pkgver}/syft_${pkgver}_linux_amd64.tar.gz"
+)
+
+sha256sums=('23894d0911f103698cf8f5293e6ddfc02f6e59fbbc5e2c32aea9c78c0957018f')
+
+package() {
+	install -D -m755 "syft" "${pkgdir}/usr/bin/syft"
+}
