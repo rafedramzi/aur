@@ -1,0 +1,17 @@
+# Maintainer: Rafed Ramzi <rafedramzi@gmail.com>
+pkgname=parca-bin
+pkgver=0.1.1
+pkgrel=1
+pkgdesc="Continuous profiling for analysis of CPU, memory usage over time, and down to the line number. Saving infrastructure cost, improving performance, and increasing reliability."
+arch=('x86_64')
+url="https://github.com/parca-dev/parca"
+license=('apache')
+provides=('parca')
+source=(
+	"parca-${pkgver}.tar.gz::https://github.com/parca-dev/parca/releases/download/v${pkgver}/parca_${pkgver}_Linux_x86_64.tar.gz"
+)
+sha256sums=('275115cc1417a52b21d53833ab2e2e78c7a2c882598ee5a47e1ffdda96c6b70c')
+
+package() {
+	install -D -m755 "parca" "${pkgdir}/usr/bin/parca"
+}
