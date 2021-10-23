@@ -1,0 +1,17 @@
+# Maintainer: Rafed Ramzi <rafedramzi@gmail.com>
+pkgname=pwru-bin
+pkgver=0.0.1
+pkgrel=1
+pkgdesc="Packet, where are you? -- Linux kernel networking debugger"
+arch=('x86_64')
+url="https://github.com/cilium/pwru"
+license=('GPL2')
+provides=('pwru')
+source=(
+	"pwru::https://github.com/cilium/pwru/releases/download/v${pkgver}/pwru"
+)
+sha256sums=('ae3f20d1760b10c845d2d9fcf9de4b7e417e9a8a9bc8ad0f460c9063ce0bc1a6')
+
+package() {
+	install -D -m755 "pwru" "${pkgdir}/usr/bin/pwru"
+}
