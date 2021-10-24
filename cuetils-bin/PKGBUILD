@@ -1,0 +1,17 @@
+# Maintainer: Rafed Ramzi <rafedramzi@gmail.com>
+pkgname=cuetils-bin
+pkgver=0.2.2
+pkgrel=1
+pkgdesc="Packages and binary for diff, patch, and other manipulations on JSON, Yaml, and CUE"
+arch=('x86_64')
+url="https://github.com/hofstadter-io/cuetils"
+license=('BSD3')
+provides=('cuetils')
+source=(
+	"cuetils::https://github.com/hofstadter-io/cuetils/releases/download/v${pkgver}/cuetils_${pkgver}_Linux_${arch}"
+)
+sha256sums=('5d543d7e70eaa41d41bf6f162fa9a0a6a80a8233ee023580cb9de49bdb09fe4a')
+
+package() {
+	install -D -m755 "cuetils" "${pkgdir}/usr/bin/cuetils"
+}
