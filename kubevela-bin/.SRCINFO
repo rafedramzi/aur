@@ -1,0 +1,15 @@
+pkgbase = kubevela-bin
+	pkgdesc = The Modern Application Delivery Platform
+	pkgver = 1.1.7
+	pkgrel = 1
+	url = https://github.com/oam-dev/kubectl-vela
+	arch = x86_64
+	license = apache2
+	provides = kubectl-vela
+	provides = vela
+	source = kubectl-vela.tar.gz::https://github.com/oam-dev/kubevela/releases/download/v1.1.7/kubectl-vela-v1.1.7-linux-amd64.tar.gz
+	source = vela.tar.gz::https://github.com/oam-dev/kubevela/releases/download/v1.1.7/vela-v1.1.7-linux-amd64.tar.gz
+	sha256sums = b4506a11024d1f32cdc422d439276125913eb02e4c546e03b26726181613c331
+	sha256sums = 12952eab564ea23dbe0ff607f290391324354066d8ff54accf98d060cb2a08c9
+
+pkgname = kubevela-bin
