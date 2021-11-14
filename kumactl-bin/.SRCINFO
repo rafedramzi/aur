@@ -1,0 +1,12 @@
+pkgbase = kumactl-bin
+	pkgdesc = 🐻 The Universal Service Mesh. CNCF Sandbox Project.
+	pkgver = 1.3.1
+	pkgrel = 1
+	url = https://github.com/kumahq/kumactl
+	arch = x86_64
+	license = apache
+	provides = kumactl
+	source = kumactl.tar.gz::https://download.konghq.com/mesh-alpine/kuma-1.3.1-ubuntu-amd64.tar.gz
+	sha256sums = 21d239a4eb20a17b22deee44551f36393c59f5bd57963f02fb4e9c619e711397
+
+pkgname = kumactl-bin
